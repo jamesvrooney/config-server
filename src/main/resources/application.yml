@@ -1,0 +1,10 @@
+spring:
+  application.name: config-server
+  cloud.config.server.git:
+    uri: https://github.com/jamesvrooney/config-repo
+    default-label: main
+    timeout: 5
+    clone-on-start: true
+    force-pull: true
+
+  output.ansi.enabled: always
